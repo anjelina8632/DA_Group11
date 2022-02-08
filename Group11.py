@@ -7,4 +7,7 @@ class NewSpider(scrapy.Spider)
     def parse(self, response):
         xpath_selector = "//img"
         for x in response.xpath(xpath_selector):
-            newsel
+            newsel = "@src"
+            yield {
+                'Image Link': x.xpath(newsel).extract_first()
+            }b
