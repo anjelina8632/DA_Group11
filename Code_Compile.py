@@ -71,6 +71,18 @@ class NewSpider(scrapy.Spider):
             yield {
                 'Image Link': x.xpath(newsel).extract_first()
             }
- # Task 8
+            
+            
+# Task 8
+# Importing the function to test file
+import unittest 
 
+#Inputting the test file
+class Task6_and_7(unittest.TestCase): 
+     def test_EngineType (self) :
+        print('Testing')
+
+# To test the file
+if __name__ == '__main__' :
+    unittest.main()
       
